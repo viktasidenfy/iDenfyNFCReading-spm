@@ -17,15 +17,15 @@ enum Checksums {
 }
 
 let package = Package(
-    name: "iDenfyLiveness",
+    name: "iDenfyNfcReading",
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "iDenfyLiveness-Dynamic",
+            name: "iDenfyNfcReading-Dynamic",
             type: .dynamic,
             targets: ["iDenfySDKTarget"]),
         .library(
-            name: "iDenfyLiveness",
+            name: "iDenfyNfcReading",
             targets: ["iDenfySDKTarget"]),
     ],
     dependencies: [
@@ -132,20 +132,20 @@ let package = Package(
         ),
         // Binaries
         .binaryTarget(name: "iDenfyInternalLogger",
-                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyLiveness/iDenfyInternalLogger.zip", checksum: Checksums.iDenfyInternalLoggerChecksum),
+                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyNfcReading/iDenfyInternalLogger.zip", checksum: Checksums.iDenfyInternalLoggerChecksum),
         .binaryTarget(name: "FaceTecSDK",
-                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyLiveness/FaceTecSDK.zip", checksum: Checksums.FaceTecSDKChecksum),
+                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyNfcReading/FaceTecSDK.zip", checksum: Checksums.FaceTecSDKChecksum),
         .binaryTarget(name: "IdenfyLiveness",
-                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyLiveness/IdenfyLiveness.zip", checksum: Checksums.iDenfyLivenessChecksum),
+                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyNfcReading/IdenfyLiveness.zip", checksum: Checksums.iDenfyLivenessChecksum),
         .binaryTarget(name: "idenfyviews",
-                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyLiveness/idenfyviews.zip", checksum: Checksums.idenfyviewsChecksum),
+                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyNfcReading/idenfyviews.zip", checksum: Checksums.idenfyviewsChecksum),
         .binaryTarget(name: "iDenfySDK",
-                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyLiveness/iDenfySDK.zip", checksum: Checksums.iDenfySDKChecksum),
+                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyNfcReading/iDenfySDK.zip", checksum: Checksums.iDenfySDKChecksum),
         .binaryTarget(name: "idenfycore",
-                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyLiveness/idenfycore.zip", checksum: Checksums.idenfycoreChecksum),
+                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyNfcReading/idenfycore.zip", checksum: Checksums.idenfycoreChecksum),
         .binaryTarget(name: "idenfyNFCReading",
-                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyLiveness/idenfyNFCReading.zip", checksum: Checksums.idenfyNFCReadingChecksum),
+                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyNfcReading/idenfyNFCReading.zip", checksum: Checksums.idenfyNFCReadingChecksum),
         .binaryTarget(name: "OpenSSL",
-                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyLiveness/OpenSSL.zip", checksum: Checksums.openSSLChecksum),
+                      url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/\(version)/spm/IdenfyNfcReading/OpenSSL.zip", checksum: Checksums.openSSLChecksum),
     ]
 )
