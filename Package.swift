@@ -14,6 +14,7 @@ enum Checksums {
     static let idenfycoreChecksum = "ad5a098213f3e167927e215a153da95e7e6e198f460802aa69efe734730d1b27"
     static let idenfyNFCReadingChecksum = "92ba9a98de8a2abb3143093748a83ccaed2837528ac2283cd5a5c7e60ad671d4"
     static let openSSLChecksum = "a9c26d1315432cda3fbf63e19856db9f987f58cb8f94cc28d6dd660826d90747"
+    static let iDenfyBlurGlareDetectionChecksum = "a9c26d1315432cda3fbf63e19856db9f987f58cb8f94cc28d6dd660826d90747"
 }
 
 let package = Package(
@@ -32,6 +33,23 @@ let package = Package(
         .package(url: "https://github.com/airbnb/lottie-spm.git", "4.4.3"..<"4.4.4"),
     ],
     targets: [
+        //iDenfyBlurGlareDetection
+        .target(
+            name: "iDenfyBlurGlareDetectionTarget",
+            dependencies: [.target(name: "iDenfyBlurGlareDetectionWrapper",
+                                   condition: .when(platforms: [.iOS]))],
+            path: "SwiftPM-PlatformExclude/iDenfyBlurGlareDetectionWrap"
+        ),
+        .target(
+            name: "iDenfyBlurGlareDetectionWrapper",
+            dependencies: [
+                .target(
+                    name: "iDenfyBlurGlareDetection",
+                    condition: .when(platforms: [.iOS])
+                ),
+            ],
+            path: "iDenfyBlurGlareDetectionWrapper"
+        ),
         //IdenfyViews
         .target(
             name: "idenfyviewsTarget",
@@ -127,6 +145,8 @@ let package = Package(
                         condition: .when(platforms: [.iOS])),
                 .target(name: "IdenfyLivenessTarget",
                         condition: .when(platforms: [.iOS])),
+                 .target(name: "iDenfyBlurGlareDetectionTarget",
+                        condition: .when(platforms: [.iOS])),
             ],
             path: "iDenfySDKWrapper"
         ),
@@ -147,5 +167,7 @@ let package = Package(
                       url: "https://s3.eu-west-1.amazonaws.com/prod-ivs-sdk.builds/ios-sdk/\(version)/spm/IdenfyNFCReading/idenfyNFCReading.zip", checksum: Checksums.idenfyNFCReadingChecksum),
         .binaryTarget(name: "OpenSSL",
                       url: "https://s3.eu-west-1.amazonaws.com/prod-ivs-sdk.builds/ios-sdk/\(version)/spm/IdenfyNFCReading/OpenSSL.zip", checksum: Checksums.openSSLChecksum),
+        .binaryTarget(name: "iDenfyBlurGlareDetection",
+                      url: "https://s3.eu-west-1.amazonaws.com/prod-ivs-sdk.builds/ios-sdk/\(version)/spm/IdenfyNFCReading/iDenfyBlurGlareDetection.zip", checksum: Checksums.iDenfyBlurGlareDetectionChecksum),
     ]
 )
