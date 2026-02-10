@@ -86,7 +86,7 @@ let package = Package(
                     name: "idenfyNFCReading",
                     condition: .when(platforms: [.iOS])
                 ),
-                .target(name: "OpenSSL",
+                .target(name: "iDenfyOpenSSL",
                         condition: .when(platforms: [.iOS])),
             ],
             path: "idenfyNFCReadingWrapper"
@@ -165,8 +165,8 @@ let package = Package(
                       url: "https://s3.eu-west-1.amazonaws.com/prod-ivs-sdk.builds/ios-sdk/\(version)/spm/IdenfyNFCReading/idenfycore.zip", checksum: Checksums.idenfycoreChecksum),
         .binaryTarget(name: "idenfyNFCReading",
                       url: "https://s3.eu-west-1.amazonaws.com/prod-ivs-sdk.builds/ios-sdk/\(version)/spm/IdenfyNFCReading/idenfyNFCReading.zip", checksum: Checksums.idenfyNFCReadingChecksum),
-        .binaryTarget(name: "OpenSSL",
-                      url: "https://s3.eu-west-1.amazonaws.com/prod-ivs-sdk.builds/ios-sdk/\(version)/spm/IdenfyNFCReading/OpenSSL.zip", checksum: Checksums.openSSLChecksum),
+        .binaryTarget(name: "iDenfyOpenSSL",
+                      url: "https://s3.eu-west-1.amazonaws.com/prod-ivs-sdk.builds/ios-sdk/\(version)/spm/IdenfyNFCReading/iDenfyOpenSSL.zip", checksum: Checksums.openSSLChecksum),
         .binaryTarget(name: "iDenfyBlurGlareDetection",
                       url: "https://s3.eu-west-1.amazonaws.com/prod-ivs-sdk.builds/ios-sdk/\(version)/spm/IdenfyNFCReading/iDenfyBlurGlareDetection.zip", checksum: Checksums.iDenfyBlurGlareDetectionChecksum),
     ]
