@@ -19,7 +19,7 @@ enum Checksums {
 
 let package = Package(
     name: "iDenfyNFCReading",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "iDenfyNFCReading-Dynamic",
