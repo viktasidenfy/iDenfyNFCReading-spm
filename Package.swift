@@ -3,18 +3,18 @@
 
 import PackageDescription
 
-let version = "2.2.6"
+let version = "9.1.2"
 
 enum Checksums {
-    static let iDenfyInternalLoggerChecksum = "e17adce52c3b5984bdeeb4e4a2339865a3842c6ffb136f4be945764cff79d0a5"
-    static let FaceTecSDKChecksum = "c6d4e72b79dfe40e2e21dd994876f2a8a7eac9f63628edc47eff3369bf4179e2"
-    static let iDenfyLivenessChecksum = "41da461a13c8ec7c2aab6590871cf6c20835070d3c18de9887da27a740758f04"
-    static let idenfyviewsChecksum = "7b656b149e8e0e43378528f51e9920605304110e35164f3153047949b8f4582e"
-    static let iDenfySDKChecksum = "0a4108d893de8bafdd237e3ac958c398898aa334e5ab096ef08959b31e236d94"
-    static let idenfycoreChecksum = "02aafa5a9bdb7bf8c8532e0a25ee6e1d577ec531d9827af78c9f4213638ab38e"
-    static let idenfyNFCReadingChecksum = "ad69ce8e4903a92f767442450ff141c0fbff80ad8930ab6f2d6cda6f5627e7ff"
-    static let openSSLChecksum = "014de1d202a2f952e947b36a0b4bb35676b7fe18ee0b8e16ee469e5a1515c077"
-    static let iDenfyBlurGlareDetectionChecksum = "d4d8608b24115fe26f5613a5eb2502baa2e348609cfe0785efcd2c01b87851ec"
+    static let iDenfyInternalLoggerChecksum = "d968a48246e3b1a2c8fe4e993b970192337b12ba5f8a894ece5d55c03d047267"
+    static let FaceTecSDKChecksum = "7030a9da2245e099d46db287265e8250d7504573bc798d05f2b0bbdf9f68da5f"
+    static let iDenfyLivenessChecksum = "e0d07eba72d40f8cb1ec50e9bca69205aca5dc145d03d0cde6b6f4058ff109d9"
+    static let idenfyviewsChecksum = "3ab38f563e2d3f03f60b19e78c4e7cf715eace9eae69c771b41590c3a05c564f"
+    static let iDenfySDKChecksum = "d794812ec12119f422dafb8ca43e20680e7d7a3a7dd0317c75c9eea1957721c8"
+    static let idenfycoreChecksum = "8a4e324af205c8b944a7091a3fe49102763247017316bba633ef164b46346d95"
+    static let idenfyNFCReadingChecksum = "6f040787fe9da4d5fcff435cf4e39b43a70684193bffac4a0b1862204a6273a6"
+    static let openSSLChecksum = "675ebc79e1d5df40d1be0d16249ee33cb534ade8ae7ac52039f9c83a64b093c5"
+    static let iDenfyBlurGlareDetectionChecksum = "708a6eed02bd1a913aa2e86111516ad715c4589cfe5b2b6693a8cc2ab9cc0192"
 }
 
 let package = Package(
