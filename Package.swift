@@ -6,15 +6,15 @@ import PackageDescription
 let version = "9.3.0"
 
 enum Checksums {
-    static let iDenfyInternalLoggerChecksum = "af989bbdbb70b148d4c4fe7a6417ef5ccae65aef746948d4ac859255194c87e5"
-    static let FaceTecSDKChecksum = "498c471dec9436425c3f1ae47c164d70c118c25d434155a79a9cb6612fb5827e"
-    static let iDenfyLivenessChecksum = "6d6116c5578b5ba42dbdcd043f75a69e69b61a14a25b3e74d540da5e40f746fe"
-    static let idenfyviewsChecksum = "58e0d576eecc33995eced76a356ff536598bd095c1657e4c240a9c1408c80a95"
-    static let iDenfySDKChecksum = "4093ad6ac01e436ccd6b7473fe2fa28448bb518558559c2f795e16e8456a81b0"
-    static let idenfycoreChecksum = "54b2040128d04982d8e1575bb2f911be47e1cf4c6900d16093f034e9054f9737"
-    static let idenfyNFCReadingChecksum = "aa8779ea254395b57a7ed0c8683e502d73ff92d49ccc818b2d5f943021751f00"
-    static let openSSLChecksum = "4db756b5f9d84be5ab55f7741e69055fa4545af0fbf9f35db9d6d4ef25b2d535"
-    static let iDenfyBlurGlareDetectionChecksum = "9ac80b4c6221f17484f8d323e76c5870efc21d87e2e9f932cfa14025cc038c93"
+    static let iDenfyInternalLoggerChecksum = "5ac80fcbee52ac8a79cce11af85e69889a410d2dbb1657c24b7d16da6d43783a"
+    static let FaceTecSDKChecksum = "d02d86520d3f70cc17d6f7507cce97af9d5ea1b8f903905d1969025dfa517c5a"
+    static let iDenfyLivenessChecksum = "148fe35470938f201f67232ae1194da5bca41dbe43450dff8e7e3c56bedab534"
+    static let idenfyviewsChecksum = "9b53c224a61ec2d42e022fe75bf244c9fa914be43fdda9473d125d7daf4d1434"
+    static let iDenfySDKChecksum = "f6bbfb6a9b6ae17d8b2c497f162e4996fbf163d76f467fbbc4ed4a4e7e804280"
+    static let idenfycoreChecksum = "36573a0ffa61557682fa84537f3068ed01f6589bde40595a6d2dc1ec695dcf82"
+    static let idenfyNFCReadingChecksum = "f6f349359ee6b5cd237c664802a87ba31b399189e512d68fed96775481e09505"
+    static let openSSLChecksum = "57d83cc9ae2875439fb42cc8fa69bd1a28a71ad81669b378c7882d8deda8db50"
+    static let iDenfyBlurGlareDetectionChecksum = "5521537afd5cfc09791548166c780c85b45845d0e5090e6fa62017c56bffca15"
 }
 
 let package = Package(
